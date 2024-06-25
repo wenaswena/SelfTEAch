@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-presentacion',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPresentacionPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  navigateToFormulario() { // Change function name
+    this.router.navigate(['/tabs/tab1']); // Navigate to tab1
   }
-
+  
+  ngOnInit() {
+    setTimeout(this.navigateToFormulario, 6000); // Llama a navigateToLogin después de 6 segundos
+  }
 }
