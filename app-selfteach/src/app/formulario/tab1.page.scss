@@ -1,0 +1,65 @@
+ion-content {
+    --background: #9CB5F1; /* Color de fondo celeste */
+  }
+  
+  .header-title {
+    position: absolute;
+    top: 150px; /* Ajustar la posición vertical con la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black; /* Color de texto negro */
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5rem;
+    z-index: 1; /* Asegura que el título esté encima de otras capas */
+  }
+  
+  .welcome-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .footer-text {
+    color: #808080; /* Color plomo */
+    margin-top: 20px;
+    
+  }
+  
+  .support-text {
+    margin-top: 20px;
+    padding: 0 10px; /* Añade algo de padding para que el texto no se pegue a los bordes */
+    color: black;
+  }
+  
+  .left-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 380px; /* Ajustar el tamaño según sea necesario */
+    height: auto;
+  }
+  
+  .right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px; /* Ajustar el tamaño según sea necesario */
+    height: auto;
+  }
+  
+  ion-title {
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+  }
+  

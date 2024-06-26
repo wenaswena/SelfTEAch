@@ -4,12 +4,12 @@ ion-content {
 
 .header-title {
   position: absolute;
-  top: 90px; /* Ajustar la posición vertical con la imagen */
+  top: 150px; /* Ajustar la posición vertical con la imagen */
   left: 50%;
   transform: translateX(-50%);
   color: black; /* Color de texto negro */
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   z-index: 1; /* Asegura que el título esté encima de otras capas */
 }
 
