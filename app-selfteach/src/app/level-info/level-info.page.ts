@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./level-info.page.scss'],
 })
 export class LevelInfoPage implements OnInit {
+goBack() {
+throw new Error('Method not implemented.');
+}
+level: any;
 
   constructor() { }
 

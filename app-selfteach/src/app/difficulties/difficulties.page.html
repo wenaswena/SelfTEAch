@@ -1,13 +1,32 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>difficulties</ion-title>
+    <ion-title>¿En qué se le dificulta?</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">difficulties</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-checkbox slot="start" value="dificultad1"></ion-checkbox>
+      <ion-label>Dificultad 1</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start" value="dificultad2"></ion-checkbox>
+      <ion-label>Dificultad 2</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start" value="dificultad3"></ion-checkbox>
+      <ion-label>Dificultad 3</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start" value="otro"></ion-checkbox>
+      <ion-label>Otro</ion-label>
+      <ion-input placeholder="Especifique"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" (click)="submitForm()">Enviar</ion-button>
 </ion-content>

@@ -1,13 +1,14 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>level-info</ion-title>
+    <ion-title>Información del Nivel</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">level-info</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-text>
+    <!-- Aquí agregas la información sobre el nivel -->
+    <p>Nivel de desarrollo: {{ level }}</p>
+  </ion-text>
+
+  <ion-button expand="block" (click)="goBack()">Volver</ion-button>
 </ion-content>
