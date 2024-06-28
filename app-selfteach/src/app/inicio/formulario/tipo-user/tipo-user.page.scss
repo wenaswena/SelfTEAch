@@ -1,0 +1,124 @@
+ion-content {
+  --background: #9CB5F1; /* Color de fondo celeste */
+  position: relative; /* Add this to create a containing block for absolute elements */
+}
+
+.header-title {
+  position: absolute;
+  top: 295px; /* Ajustar la posición vertical con la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+  color: black; /* Color de texto negro */
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2.5rem;
+  z-index: 2; /* Increase z-index to put it on top of images */
+}
+
+.perfil-title {
+  font-family: 'Gloria Hallelujah'; 
+  background-color: #D9D9D9; 
+  padding: 5px; 
+  z-index: 2; 
+  color: black;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.nino-form {
+  max-width: 80%;
+  margin: 0 auto; /* Center horizontally */
+  padding: 6%; /* Add padding to separate from border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  z-index: 2; /* Keep z-index to stay on top of images */
+  margin-top: 20px;
+  display: flex; /* Add flexbox to center image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.nino-form img {
+  max-width: 100%; /* Make sure image doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+.left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 380px; /* Ajustar el tamaño según sea necesario */
+  height: auto;
+  z-index: -1; /* Send it to the back */
+}
+
+.right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 380px; /* Ajustar el tamaño según sea necesario */
+  height: auto;
+  z-index: -1; /* Send it to the back */
+}
+
+.welcome-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px; /* add some margin around the buttons */
+}
+
+.boton-tea {
+  width: 80%; /* adjust the width to fit both buttons */
+  height: auto;
+  margin: 10px; /* add some margin between buttons */
+  right: 50%;
+  margin-right: 90px;
+}
+
+.boton-cuidador {
+  width: 40%;
+  height: auto;
+  margin: 10px;
+  margin-left: 10px; /* agregar margin-left */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px; /* Agregar margen para separar de los textos */
+}
+
+.estre-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Make sure it's on top of left-image */
+  width: 60px;
+}
+
+.estre-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; /* Make sure it's on top of right-image */
+  width: 60px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.button-wrapper button {
+  margin-bottom: 5px; /* Espacio entre el botón y el texto */
+  
+}
