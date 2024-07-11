@@ -26,38 +26,36 @@ ion-content {
 
 .nino-form {
   max-width: 80%;
-  margin: 0 auto; /* Center horizontally */
-  padding: 6%; /* Add padding to separate from border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  z-index: 2; /* Keep z-index to stay on top of images */
-  margin-top: 20px;
-  display: flex; /* Add flexbox to center image */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  margin: 20px auto; /* Centrar horizontalmente y añadir margen superior */
+  padding: 6%; /* Añadir padding para separar del borde */
+  z-index: 2; /* Mantener z-index para mantenerse encima de las imágenes */
+  display: flex; /* Añadir flexbox para centrar imagen */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
 }
 
 .nino-form img {
-  max-width: 100%; /* Make sure image doesn't exceed container width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantener la proporción */
   margin: 0 auto; /* Center image horizontally */
 }
 
-.left-image {
+.left-image,
+.right-image {
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 380px; /* Ajustar el tamaño según sea necesario */
   height: auto;
-  z-index: -1; /* Send it to the back */
+  z-index: -1; /* Enviar al fondo */
+}
+
+.left-image {
+  bottom: 0;
+  left: 0;
 }
 
 .right-image {
-  position: absolute;
   top: 0;
   right: 0;
-  width: 380px; /* Ajustar el tamaño según sea necesario */
-  height: auto;
-  z-index: -1; /* Send it to the back */
 }
 
 .welcome-form {
@@ -87,6 +85,7 @@ ion-content {
   height: auto;
   margin: 10px;
   margin-left: 10px; /* agregar margin-left */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .image-container {
@@ -116,9 +115,42 @@ ion-content {
   flex-direction: column;
   align-items: center;
   color: black;
+  margin-top: 20px; /* Espacio entre el texto y los botones */
+}
+
+.boton-tea-wrapper {
+  margin-left: 200px; /* Ajustar este valor para mover el botón de Persona con TEA más a la derecha */
 }
 
 .button-wrapper button {
-  margin-bottom: 5px; /* Espacio entre el botón y el texto */
-  
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinear el contenido del botón al centro */
+  width: 100px; /* Ajustar este valor según el ancho deseado */
+  height: 100px; /* Ajustar el tamaño del botón */
+  margin-bottom: 0.9px; /* Espacio entre el texto y el boton */
+  padding: 0; /* Ajustar el padding según sea necesario */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Asegúrate de que las esquinas sean redondeadas */
+  overflow: hidden; /* Para evitar que los bordes blancos sean visibles */
+  background-color: white; /* Asegúrate de que el fondo sea blanco */
+  border: none; 
+}
+
+.button-wrapper button img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  justify-content: center;
+}
+
+.cuidador-image,
+.persona-image {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Asegúrate de que las esquinas sean redondeadas */
+}
+
+.support-text {
+  text-align: left;
+  margin-left: -50px; /* Ajustar este valor para mover el texto más a la izquierda */
 }
