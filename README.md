@@ -2,6 +2,6 @@
 # SelfTEAch
 Merge branch 'origin/main' into main
 
-Resolviendo conflictos y actualzaciones de la rama con los últimos cambios de la rama principal.
+Resolviendo conflictos y actualizaciones de la rama con los últimos cambios de la rama principal.
 =======
 
