@@ -1,13 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>nivel-desa</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <!-- Imagen y texto de personalización -->
+  <div class="perfil-title">
+    <h3>Personaliza tu perfil...</h3>
+    <img src="assets/imgs/formu-nino.png" alt="Icono perfil" class="nino-form" />
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">nivel-desa</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Título de nivel de desarrollo -->
+  <div class="header-title ">
+    <h2>Nivel de desarrollo</h2>
+  </div>
+
+  <!-- Botones de nivel y signos de interrogación -->
+  <div class="niveles-grid">
+    <ion-button (click)="goToDifficulties(1)">
+      1
+    </ion-button>
+    <ion-button (click)="goToInfoNivel(1)" fill="clear">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="goToDifficulties(2)">
+      2
+    </ion-button>
+    <ion-button (click)="goToInfoNivel(2)" fill="clear">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="goToDifficulties(3)">
+      3
+    </ion-button>
+    <ion-button (click)="goToInfoNivel(3)" fill="clear">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <!-- Botón para regresar -->
+  <ion-button expand="block" fill="outline" (click)="goBack()">
+    Anterior...
+  </ion-button> <!--poner clase-->c
+  <img src="assets/imgs/Imagen1.png" alt="Imagen 1" class="cuestion-azul" />  
+  <img src="assets/imgs/Imagen2.png" alt="Imagen 2" class="cuestion-celeste" />
+  <img src="assets/imgs/estrella1.png" alt="Estrella 1" class="estre-izq">
+  <img src="assets/imgs/estrella2.png" alt="Estrella 2" class="estre-der">
 </ion-content>

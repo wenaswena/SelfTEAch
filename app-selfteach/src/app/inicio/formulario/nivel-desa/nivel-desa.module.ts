@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-
 import { NivelDesaPageRoutingModule } from './nivel-desa-routing.module';
-
 import { NivelDesaPage } from './nivel-desa.page';
 
 @NgModule({
@@ -13,7 +11,8 @@ import { NivelDesaPage } from './nivel-desa.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    NivelDesaPageRoutingModule
+    NivelDesaPageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [NivelDesaPage]
 })
