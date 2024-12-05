@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-nivel-desa',
-  templateUrl: './nivel-desa.page.html',
-  styleUrls: ['./nivel-desa.page.scss'],
+    selector: 'app-nivel-desa',
+    templateUrl: './nivel-desa.page.html',
+    styleUrls: ['./nivel-desa.page.scss'],
+    standalone: false
 })
 export class NivelDesaPage {
 

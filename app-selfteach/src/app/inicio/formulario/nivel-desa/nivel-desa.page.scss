@@ -57,20 +57,12 @@ ion-content {
     z-index: 1; /* Make sure it's on top of right-image */
     width: 68px;
   }
-
-.left-image {
-
-}
-
-.cuestion-azul {
-  bottom: 0;
-  left: 0;
-  padding: 100%;
-}
-
-.cuestion-celeste {
+  
+  .left-image, 
+  .right-image {
 
 }
+
 
 .niveles-grid { //botones de los niveles 
 

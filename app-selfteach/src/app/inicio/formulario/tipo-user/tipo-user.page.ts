@@ -3,9 +3,10 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tipo-user',
-  templateUrl: './tipo-user.page.html',
-  styleUrls: ['./tipo-user.page.scss']
+    selector: 'app-tipo-user',
+    templateUrl: './tipo-user.page.html',
+    styleUrls: ['./tipo-user.page.scss'],
+    standalone: false
 })
 export class TipoUserPage {
   formulario: FormGroup;
